@@ -37,5 +37,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print("Application moved from [Background] to [Not running]: ",#function)
     }
     #endif
+    
 }
 
