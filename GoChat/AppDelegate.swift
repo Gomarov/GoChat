@@ -13,30 +13,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
 
-    #if DEBUG
+   // #if DEBUG
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        print("Application moved from [Not running] to [Inactive]: ",#function)
+        Logger.log(from: "[Not running]", to: "[Inactive]")
         return true
     }
     func applicationWillResignActive(_ application: UIApplication) {
-        print("Application moved from [Active] to [Inactive]: ",#function)
+        Logger.log(from: "[Active]", to: "[Inactive]")
     }
     
     func applicationDidBecomeActive(_ application: UIApplication) {
-        print("Application moved from [Inactive] to [Active]: ",#function)
+        Logger.log(from: "[Inactive]", to: "[Active]")
     }
     
     func applicationDidEnterBackground(_ application: UIApplication) {
-        print("Application moved from [Inactive] to [Background]: ",#function)
+        Logger.log(from: "[Inactive]", to: "[Background]")
     }
     func applicationWillEnterForeground(_ application: UIApplication) {
-        print("Application moved from [Background] to [Inactive]: ",#function)
+        Logger.log(from: "[Background]", to: "[Inactive]")
     }
    
     func applicationWillTerminate(_ application: UIApplication) {
-        print("Application moved from [Background] to [Not running]: ",#function)
+        Logger.log(from: "[Background]", to: "[Not running]")
     }
-    #endif
+  //  #endif
     
 }
 

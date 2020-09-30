@@ -10,11 +10,7 @@ import UIKit
 
 class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    @IBOutlet weak var editButton: UIButton! {
-        didSet {
-            print(editButton.frame)
-        }
-    }
+    @IBOutlet weak var editButton: UIButton!
     @IBOutlet weak var avatarImageView: UIImageView!{
         didSet {
             avatarImageView.layer.cornerRadius = avatarImageView.bounds.width / 2

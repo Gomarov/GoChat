@@ -10,36 +10,35 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    #if DEBUG
     override func viewDidLoad() {
         super.viewDidLoad()
+        Logger.log()
         print(#function)
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print(#function)
+        Logger.log()
     }
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        print(#function)
+        Logger.log()
     }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        print(#function)
+        Logger.log()
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print(#function)
+        Logger.log()
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        print(#function)
+        Logger.log()
     }
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        print(#function)
+        Logger.log()
     }
-    #endif
     
 }
 
